@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = "http://140.245.5.226:9000";
+const BASE_URL = "http://140.245.5.226:";
 
 const handler = async (req, res) => {
   // ✅ CORS headers
@@ -17,9 +17,9 @@ const handler = async (req, res) => {
   const method = req.method.toLowerCase();
 
   const urlMap = {
-    "server-status": "/",
-    "login": "/api/v1/auth/login",
-    "chat": "http://140.245.5.226:5678/webhook/banking-chatbot/"
+    "server-status": "900/",
+    "login": "9000/api/v1/auth/login",
+    "chat": "5678/webhook/banking-chatbot"
   };
 
   const targetPath = urlMap[endpoint];
