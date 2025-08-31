@@ -18,7 +18,8 @@ const handler = async (req, res) => {
 
   const urlMap = {
     "server-status": "/",
-    "login": "/api/v1/auth/login"
+    "login": "/api/v1/auth/login",
+    "chat": "http://140.245.5.226:5678/webhook/banking-chatbot/"
   };
 
   const targetPath = urlMap[endpoint];
